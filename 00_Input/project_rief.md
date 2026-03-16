@@ -1,43 +1,32 @@
-# PROJECT BRIEF: SKILL-MATCHING HUB (SMH)
+# Project Brief
 
-## 1. Project Overview
+**Project Name:** Skill-Matching Hub (SMH)
 
-- **Objective:** Develop a comprehensive platform to manage employee skill profiles and automatically recommend suitable candidates for projects based on technical requirements.
-- **Problem Statement:** Leaders and PMs struggle to maintain visibility into detailed staff competencies (especially niche skills). This often leads to suboptimal resource allocation and misalignment between project needs and developer expertise.
-- **Core Value:** Streamlining skill-based searches, managing skill roadmaps, and optimizing resource forecasting.
+## Objective
 
-## 2. Target Audience
+Xây dựng một hệ sinh thái quản lý kỹ năng nhân sự tập trung, giúp việc điều phối nhân sự vào dự án trở nên nhanh chóng, chính xác và dựa trên dữ liệu thực tế.
 
-- **PM / Resource Manager:** Identify candidates with precise technical stacks (e.g., Senior Flutter with BLoC and WebRTC experience).
-- **Employees (Developers):** Maintain individual skill portfolios, track certifications, and define professional growth paths.
-- **HR / Admin:** Monitor workforce trends and identify organizational training needs.
+## Vision
 
-## 3. Scope of Work
+Chuyển đổi quy trình tìm kiếm nhân sự từ **"hỏi thủ công / cảm tính"** sang **"truy vấn dữ liệu thông minh"**.
 
-### Core Features (MVP)
+## Target Users
 
-- **Skill Inventory:** Hierarchical skill taxonomy (Frontend, Backend, Mobile, AI, DevOps, etc.) with proficiency levels (1-5).
-- **Employee Profile:** Detailed records including existing skills, project history, certifications, and leadership assessments.
-- **Project Matching:** Project requirement input (e.g., Next.js + Tailwind) returning a list of available candidates with matching skill sets.
-- **Availability Calendar:** Real-time resource management, tracking project commitments and bandwidth availability.
+- Employee
+- Project Manager
+- HR / Resource Manager
+- System Admin
 
-### Extended Features
+## High-Level Features
 
-- **AI-Resume Parser:** Automated extraction of candidate data from PDF resumes using lightweight OCR.
-- **Project History Visualization:** Timeline-based dashboard displaying an employee's project involvement and professional evolution.
-- **AI-Conversational Assistant:** Integrated Chat UI allowing PMs to query, search, and summarize team competencies using natural language (e.g., _"Find a Senior Flutter developer with WebRTC experience who is currently available"_).
+- Quản lý hồ sơ kỹ năng nhân sự
+- Tìm kiếm nhân sự theo kỹ năng
+- Định nghĩa yêu cầu kỹ năng cho dự án
+- Gợi ý nhân sự phù hợp cho dự án
 
-## 4. Technical Requirements
+## Technical Stack
 
-- **Web Framework:** **Next.js 14+** (App Router) with **Tailwind CSS**.
-- **State Management:** **Zustand** or **React Context** (to handle complex filtering states).
-- **Backend:** **Node.js (Fastify)** or **NestJS** for high-performance RESTful APIs.
-- **Database:** **PostgreSQL** for managing complex relational data between Employees, Skills, and Projects.
-- **Authentication:** **NextAuth.js** (supporting corporate Email/Google SSO).
-
-## 5. Risks & Mitigations
-
-- **Risk:** Skill data becomes outdated due to lack of regular updates.
-- **Mitigation:** Implement automated reminders via Slack/Email upon project completion to encourage profile updates.
-- **Risk:** Assessment subjectivity (self-bias).
-- **Mitigation:** Require mandatory validation/approval from team leads or verified internal competency test results.
+- Frontend Framework: Reactjs 19+ với Shadcn UI
+- State Management: Zustand và React Context
+- Backend: ASP.NET Core 10
+- Database: PostgreSQL

@@ -1,7 +1,6 @@
-import { checkbox } from "@inquirer/prompts";
 import { spawn } from "child_process";
 
-function runClaude(prompt) {
+export function runClaude(prompt) {
   return new Promise((resolve, reject) => {
     console.log("🚀 Start running Claude...");
 
@@ -42,49 +41,3 @@ function runClaude(prompt) {
     });
   });
 }
-
-async function main() {
-  const answer = await checkbox({
-    message: "Select the stages of software development you want to include:",
-    choices: [
-      {
-        name: "rd",
-        value: "rd",
-        description: "Requement Document",
-      },
-      {
-        name: "bd",
-        value: "bd",
-        description: "Basic Design",
-      },
-      {
-        name: "dd",
-        value: "dd",
-        description: "Detailed Design",
-      },
-      {
-        name: "code",
-        value: "code",
-        description: "Code Implementation",
-      },
-      {
-        name: "test",
-        value: "test",
-        description: "Testing",
-      },
-    ],
-  });
-
-  if (answer.length === 0) {
-    console.log("No options selected.");
-    return;
-  }
-
-  console.log("Selected stages:", answer);
-
-  const result = await runClaude("Hello");
-
-  console.log(result);
-}
-
-main();
