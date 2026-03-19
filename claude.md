@@ -2,8 +2,6 @@
 
 ## Overview
 
-**System Name:** Intelligent Specification & Development Flow (ISDF)
-
 This document defines operational standards for the AI to execute the full software development lifecycle (SDLC), including **RD, BD, DD, Code, and Test** generation. The objective is to produce high-quality, traceable, and consistent artifacts while maintaining professional standards.
 
 ## Language Protocols
