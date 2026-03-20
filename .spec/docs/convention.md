@@ -1,6 +1,6 @@
 # RD Convention
 
-Shared ID convention for all prompts and generated documents in `01_Requirements_Definition/`.
+Shared ID convention for all prompts and generated documents in `01_Requirements_Document/`.
 
 ---
 
@@ -41,8 +41,8 @@ Shared ID convention for all prompts and generated documents in `01_Requirements
 | `UC[MM].[NN].[PP]` | Per feature  | `PP` resets to `01` for each new feature             |
 | `AF[NN]`, `EF[NN]` | Per use case | Reset to `01` for each new UC                        |
 | `FF`               | Per flow     | Reset to `01` for each Main/Alternate/Exception Flow |
-| `BR[RR]`           | Global       | Sequential across entire `business_rules.md`         |
-| `E[EE]`            | Global       | Sequential across entire `data_model.md`             |
+| `BR[RR]`           | Global       | Sequential across entire `04_business_rules.md`         |
+| `E[EE]`            | Global       | Sequential across entire `05_data_model.md`             |
 | `SCR[SS]`          | Global       | Sequential across entire `screen_list.md`            |
 
 ---

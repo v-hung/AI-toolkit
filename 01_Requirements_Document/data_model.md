@@ -1,6 +1,6 @@
 # Logical Data Model
 
-<!-- source: usecases/*.md, business_rules.md -->
+<!-- source: 03_usecases/*.md, 04_business_rules.md -->
 <!-- total: 8 entities -->
 
 ---
